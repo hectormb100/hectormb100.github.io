@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Submitted papers, preprints, supplementary documents, and reproducible research code by Prof. Héctor Morales Bárcenas (UAM Iztapalapa).">
+  <title>Papers &amp; Code | Héctor Morales UAM-I</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$', '$$'], ['\\[', '\\]']] }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+  <a href="#main-title" class="visually-hidden">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="site-brand">
+        <span class="site-brand-badge">JHMB</span>
+        <span>Héctor Morales</span>
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="bio.html">Bio</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="papers.html" aria-current="page">Papers &amp; Code</a></li>
+          <li><a href="dissertations.html">Dissertations</a></li>
+          <li><a href="teaching.html">Teaching</a></li>
+          <li><a href="data-science-group.html">Data Science Group</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-banner">
+    <div class="container">
+      <h1 id="main-title" tabindex="-1">Papers, Preprints &amp; Reproducible Code</h1>
+      <p>
+        Companion code repositories, datasets, preprints, and supplementary documents for colleagues, collaborators, and journal reviewers.
+      </p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="https://github.com/hectormb100?tab=repositories">All GitHub Repositories (@hectormb100)</a>
+        <a class="btn" href="https://scholar.google.com/citations?hl=en&amp;user=fo9sszgAAAAJ&amp;view_op=list_works">Google Scholar Profile</a>
+        <a class="btn" href="https://orcid.org/0000-0001-9377-4918">ORCID: 0000-0001-9377-4918</a>
+        <a class="btn" href="https://www.researchgate.net/profile/Hector-Morales-7">ResearchGate</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="container">
+    <!-- Section 1: Companion Repositories & Preprints for Submitted / Recent Papers -->
+    <section class="section-block">
+      <h2>Companion Code &amp; Documents for Manuscripts</h2>
+      <p class="muted">
+        Each entry below links directly to its open-source simulation scripts (Julia, Python, R, Stan, Fortran/C++) on GitHub and any accompanying PDF preprints or supplementary notes hosted in <code>papers/</code>.
+      </p>
+
+      <!-- TEMPLATE ENTRY: Copy this <article class="paper-item"> block in Emacs whenever you submit a new paper! -->
+      <article class="paper-item mt-1">
+        <span class="badge">Research Area</span>
+        <h3>Optimal Waveform Design &amp; Inverse Problems in Dispersive Media</h3>
+        <p class="paper-meta">
+          J. H. Morales Bárcenas &middot; Departamento de Matemáticas, UAM Iztapalapa
+        </p>
+        <p class="mt-1">
+          Variational formulation of waveform design in tomographic imaging through dispersive media, minimizing the mean-square reconstruction error $\mathbb{E}\bigl[\|\hat{f} - f\|_2^2\bigr]$ under single-scattering and colored thermal noise models.
+        </p>
+        <div class="btn-row">
+          <a class="btn" href="https://scholar.google.com/citations?hl=en&amp;user=fo9sszgAAAAJ&amp;view_op=list_works">Publications on Google Scholar</a>
+          <a class="btn" href="https://github.com/hectormb100?tab=repositories">Code Repositories on GitHub</a>
+        </div>
+        <details class="bibtex-box">
+          <summary>BibTeX / Citation Template</summary>
+          <pre><code>@misc{morales_github_code,
+  author       = {Morales B{\'a}rcenas, Jos{\'e} H{\'e}ctor},
+  title        = {Research Code and Supplementary Materials},
+  howpublished = {\url{https://hectormb100.github.io/papers.html}},
+  note         = {Universidad Aut{\'o}noma Metropolitana, Iztapalapa}
+}</code></pre>
+        </details>
+      </article>
+
+      <!-- Ready-to-uncomment HTML template in source code for future submitted papers:
+      <article class="paper-item">
+        <span class="badge">Submitted / Preprint</span>
+        <h3>Paper Title Here</h3>
+        <p class="paper-meta">Author 1, J. H. Morales Bárcenas, Author 3 &middot; 2026</p>
+        <p class="mt-1">Brief abstract or description of scripts (Julia / Python / Stan) and data.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="https://github.com/hectormb100/YOUR-PAPER-REPO">GitHub Code Repository</a>
+          <a class="btn" href="papers/your-preprint.pdf">Preprint (PDF)</a>
+          <a class="btn" href="papers/your-supplement.pdf">Supplementary Material (PDF)</a>
+        </div>
+      </article>
+      -->
+    </section>
+
+    <!-- Section 2: Direct Document Downloads -->
+    <section class="section-block card">
+      <h2>Direct Access for Reviewers &amp; Colleagues</h2>
+      <p>
+        Documents placed in the <code>papers/</code> directory of this repository are available directly via permanent HTTPS links of the form:
+      </p>
+      <pre class="mt-1"><code>https://hectormb100.github.io/papers/&lt;document-name&gt;.pdf</code></pre>
+      <p class="mt-1">
+        Dedicated simulation and data repositories for individual manuscripts are hosted at:
+      </p>
+      <pre class="mt-1"><code>https://github.com/hectormb100/&lt;paper-repository-name&gt;</code></pre>
+      <p class="mt-1 muted">
+        For inquiries regarding specific datasets, simulation parameters, or preprints, please write to <code>jhmb (at) xanum.uam.mx</code>.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Dr. J. Héctor Morales Bárcenas</strong> &middot; Departamento de Matemáticas, UAM Iztapalapa, CDMX<br>
+        Email: <code>jhmb (at) xanum.uam.mx</code>
+      </div>
+      <div>
+        <a href="https://github.com/hectormb100">GitHub</a> &middot;
+        <a href="https://scholar.google.com/citations?hl=en&amp;user=fo9sszgAAAAJ&amp;view_op=list_works">Google Scholar</a> &middot;
+        <a href="https://orcid.org/0000-0001-9377-4918">ORCID</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
